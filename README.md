@@ -8,5 +8,7 @@ To run this project just clone repository and open index.html file (or host it e
 - HTML, CSS, JavaScript
 - TypeScript
 - Webpack
+## Live demo:
+[Try it yourself](https://xramzes.com/marbles-game/)
 ## Some things that I learned:
 - Object Oriented Programming in TypeScript
