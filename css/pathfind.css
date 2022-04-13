@@ -1,0 +1,111 @@
+.return{
+    display: block;
+}
+
+body {
+    /* background-color: #121212; */
+    /* color: white; */
+}
+
+body > *{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+script {
+    display: none !important;
+}
+
+.matrix {
+    display: inline-grid;
+    /* grid-gap: 2px; */
+}
+
+.matrix__field {
+    width: 40px;
+    height: 40px;
+    border-color: #121212;
+    border : 2px solid #121212;
+    color: #424242;
+
+    user-select: none;
+
+    position: relative;
+    transition:
+        background-color .25s ease,
+        border-color .1s ease;
+}
+
+.matrix__g,
+.matrix__h,
+.matrix__f {
+    position: absolute;
+    font-size: 10px;
+}
+.matrix__g {
+    left: 0;
+    top: 0;
+}
+.matrix__h {
+    right: 0;
+    top: 0;
+}
+.matrix__f {
+    /* left : 0; */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size : 15px;
+    bottom: 0;
+}
+
+
+.matrix__field--checked {
+    background-color: orange;
+    border-color: orange;
+}
+.matrix__field--path {
+    background-color: red;
+    border-color: red;
+    transition:
+        background-color .1s ease;
+}
+
+.matrix__field--border {
+    border-color: #01aa77;
+    background-color: #01aa77;
+    /* background-color: #fdf0ad; */
+}
+
+.matrix__field--border::after {
+    content: 'x';
+    background-color: #01aa77;
+    
+    font-size: 27.5px;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.matrix__field--start {
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
+
+.matrix__field--end {
+    background-color: #0505af;
+    border-color: #0505af;
+
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    /* background-color: black; */
+    text-align: center;
+    /* display: inline-block; */
+    margin: 0 auto;
+}

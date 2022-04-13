@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>Kukle : the game</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/board.css">
+
+    <style id="cursor-style"></style>
+    <style id="style"></style>
+    <script src="./dist/index.bundle.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kukle</h1>
+            <div id="pop-out"></div>
+            <div id="controls">
+                <div id="points">0</div>
+                <div id="time">00:00:00</div>
+                <div id="drawed-balls">
+                    <div id="drawed-ball-0" class="matrix__ball--show" ></div>
+                    <div id="drawed-ball-1" class="matrix__ball--show" ></div>
+                    <div id="drawed-ball-2" class="matrix__ball--show" ></div>
+                </div>
+            </div>
+        </header>
+    
+        <div id="balls"></div>
+        <div id="board"></div>
+        <div id="buttons">
+            <button id="reset-game">reset</button>
+            <button id="show-field-info-btn">
+                <input type="checkbox" id="show-field-info" value="false" checked>
+                hide field info
+            </button>
+            <a href="./pathfind.html"><button> pathfind </button></a>
+        </div>
+        <div id="overlay">
+            <div id="gameover" class="force-hide">
+                <div id="gameover__points">0</div>
+                <div id="gameover__time">0</div>
+                <h1>No i przegrałeś miszczu</h1>
+                <button id="replay"> zagraj jeszcze raz </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "kulki-the-game",
+  "version": "1.1.0",
+  "description": "może tym razem ten webpack zadziala",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^8.0.4",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "typescript": "^4.0.3"
+  }
+}

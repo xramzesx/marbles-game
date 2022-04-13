@@ -1,0 +1,17 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    /* background-color: #321123; */
+    background-color: #121212;
+    /* color: #321123; */
+
+    /* cursor: default; */
+    color: white;
+}
